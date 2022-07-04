@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/extended-io.iml" filepath="$PROJECT_DIR$/extended-io.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/extended-io.main.iml" filepath="$PROJECT_DIR$/.idea/modules/extended-io.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/extended-io.test.iml" filepath="$PROJECT_DIR$/.idea/modules/extended-io.test.iml" />
+    </modules>
+  </component>
+</project>

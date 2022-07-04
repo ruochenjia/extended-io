@@ -1,0 +1,42 @@
+plugins {
+    id "java"
+    id "application"
+    id "org.openjfx.javafxplugin" version "0.0.10"
+}
+
+group "com.example"
+version "1.0"
+
+repositories {
+    google()
+    maven { url "https://jitpack.io" }
+    maven { url "https://maven.fabric.io/public" }
+    mavenCentral()
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+javafx {
+    version = "17.0.1"
+    modules = ["javafx.base", "javafx.controls", "javafx.fxml", "javafx.graphics", "javafx.media", "javafx.swing", "javafx.web"]
+}
+
+compileJava {
+    options.encoding = "ascii"
+    options.debug = true
+    options.verbose = true
+    options.warnings = true
+    options.deprecation = true
+}
+
+dependencies {
+    compileOnly fileTree(dir: "libs", include: ["*.jar"])
+    compileOnly 'androidx.annotation:annotation:1.4.0'
+}
+
+test {
+    useJUnitPlatform()
+}
